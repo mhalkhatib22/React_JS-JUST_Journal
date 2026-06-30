@@ -1,0 +1,56 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+.welcome-card {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+.welcome-card h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.welcome-card p {
+  color: #6b7280;
+  font-size: 16px;
+}
+.content-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.section-title {
+  color: #1e3a8a;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+.intro-text {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 15px;
+  text-align: justify;
+}
+.guidelines-list {
+  padding-left: 20px;
+}
+.guidelines-list li {
+  margin-bottom: 15px;
+  color: #374151;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.guidelines-list strong {
+  color: #1f2937;
+  font-weight: 600;
+}

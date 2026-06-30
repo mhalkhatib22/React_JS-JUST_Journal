@@ -1,0 +1,222 @@
+.final-decision-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  padding: 20px;
+  position: relative;
+}
+.page-title {
+  color: #1b396a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.table-wrapper {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+.custom-table th,
+.custom-table td {
+  border-bottom: 1px solid #eee;
+  padding: 14px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+.custom-table th {
+  background-color: #f8f9fa;
+  font-weight: 700;
+  color: #1b396a;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.badge-accept {
+  background-color: #28a745;
+}
+.badge-reject {
+  background-color: #dc3545;
+}
+
+.notes-cell {
+  min-width: 160px;
+}
+.note-preview {
+  font-size: 0.85rem;
+  color: #666;
+  margin-right: 5px;
+}
+.btn-view-note {
+  background: #e3f2fd;
+  border: none;
+  color: #1b396a;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.btn-view-note:hover {
+  background-color: #1b396a;
+  color: white;
+}
+.no-notes {
+  color: #ccc;
+}
+
+.btn-icon {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+.btn-icon:hover {
+  border-color: #1b396a;
+  color: #1b396a;
+  background: #f0f4f8;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.btn-publish {
+  background-color: #1b396a;
+}
+.btn-reject {
+  background-color: #dc3545;
+}
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-style: italic;
+}
+.loading-text {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  color: #1b396a;
+}
+
+/* ✅ ستايل المودال */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية معتمة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: slideDown 0.3s ease-out;
+}
+
+.modal-header {
+  background-color: #1b396a;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  padding: 15px;
+  background-color: #f1f1f1;
+  text-align: right;
+}
+.btn-close-modal {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-close-modal:hover {
+  background-color: #5a6268;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

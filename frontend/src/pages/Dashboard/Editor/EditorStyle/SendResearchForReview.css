@@ -1,0 +1,84 @@
+/* نفس الستايل تبعك بالضبط */
+.send-review-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 90vh;
+}
+.section-title {
+  color: #1b396a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+.mt-large {
+  margin-top: 50px;
+}
+.table-wrapper {
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+.custom-table th,
+.custom-table td {
+  border-bottom: 1px solid #eee;
+  padding: 14px 18px;
+  text-align: left;
+}
+.custom-table th {
+  background-color: #1b396a;
+  color: white;
+  text-align: center;
+}
+.custom-table td {
+  color: #555;
+  text-align: center;
+}
+.btn-view {
+  background: transparent;
+  border: 1px solid #1b396a;
+  color: #1b396a;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-view:hover {
+  background-color: #1b396a;
+  color: white;
+}
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+.btn-submit {
+  background-color: #1b396a;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.loading-state {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #1b396a;
+}
+.selected-row {
+  background-color: #e3f2fd;
+} /* إضافة بسيطة لتمييز الصف المختار */
+.selection-info {
+  color: #1b396a;
+  font-weight: bold;
+}

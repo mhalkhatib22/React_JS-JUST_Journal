@@ -1,0 +1,228 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f2c5c;
+  border-bottom: 1px solid #0b1f42;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  min-height: 75px; /*n*/
+}
+
+/* ===== LOGO ===== */
+.logo-section {
+  text-decoration: none;
+}
+
+.logo-section h2 {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* ===== LINKS ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 1;/*n*/
+}
+
+.center-links,
+.nav-links > div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* NavLink styling */
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: #0c61d1;
+}
+
+.nav-item.active::after,
+a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0f2c5c;
+  background-color: white;
+}
+
+/* ===== RIGHT SIDE ===== */
+.right-actions,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== AUTH BUTTONS ===== */
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-login {
+  background-color: white;
+  border: 1px solid #0f2c5c;
+  color: #0f2c5c;
+}
+
+.btn-login:hover {
+  background-color: #f0f4ff;
+}
+
+.btn-signup {
+  background-color: #0f2c5c;
+  border: 1px solid #0f2c5c;
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: #0a1f42;
+}
+
+/* ===== NOTIFICATIONS ===== */
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 320px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-header {
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  cursor: pointer;
+  position: relative;
+}
+
+.notif-item:hover {
+  background: #f9f9f9;
+}
+
+.notif-item.unread {
+  background: #eef5ff;
+}
+
+.blue-dot {
+  width: 8px;
+  height: 8px;
+  background: #0f2c5c;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ===== PROFILE ===== */
+.profile-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #db6f6f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile dropdown */
+.profile-dropdown {
+  width: 200px;
+  right: 0;
+}
+
+.dropdown-item {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #eee;
+}

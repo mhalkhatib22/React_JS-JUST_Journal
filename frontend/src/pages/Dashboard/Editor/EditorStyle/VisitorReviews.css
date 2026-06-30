@@ -1,0 +1,74 @@
+.visitor-reviews-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  color: #1b396a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* تنسيق الجدول */
+.table-wrapper {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.custom-table th {
+  background-color: #f9f9f9;
+  font-weight: 700;
+  color: #222;
+}
+
+/* تخصيص الخلايا */
+.name-cell {
+  font-weight: 600;
+  color: #1b396a;
+}
+
+.message-cell {
+  max-width: 400px; /* تحديد عرض الرسالة عشان ما تخرب الجدول */
+  line-height: 1.5;
+  color: #555;
+}
+
+/* زر الحذف */
+.btn-delete {
+  background-color: white;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}

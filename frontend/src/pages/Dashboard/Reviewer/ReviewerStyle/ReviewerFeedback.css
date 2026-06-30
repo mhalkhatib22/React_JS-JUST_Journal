@@ -1,0 +1,66 @@
+.feedback-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+  border: 1px solid #eee;
+}
+
+.page-title {
+  color: #1b396a;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.textarea-field {
+  width: 100%;
+  height: 180px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+  transition: border 0.3s;
+}
+.textarea-field:focus {
+  border-color: #1b396a;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(27, 57, 106, 0.1);
+}
+
+.actions {
+  text-align: right;
+}
+
+.btn {
+  background: #1b396a;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #152c52;
+}
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

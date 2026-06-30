@@ -1,0 +1,105 @@
+.my-research-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* كرت الجدول */
+.table-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  overflow: hidden; /* عشان الزوايا */
+}
+
+/* تنسيق الجدول */
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.research-table th {
+  background-color: #f4f4f4; /* لون الخلفية السكني للعنوان زي الصورة */
+  padding: 15px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.research-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+/* تمييز الصفوف عند التمرير */
+.research-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.title-cell {
+  font-weight: 600;
+  color: #1b396a;
+}
+
+/* ألوان الحالة */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.status-submitted {
+  background-color: #fef2f2;
+  color: #991b1b;
+} /* أزرق فاتح */
+.status-review {
+  background-color: #fef3c7;
+  color: #d97706;
+} /* برتقالي */
+.status-published {
+  background-color: #dcfce7;
+  color: #16a34a;
+} /* أخضر */
+
+/* الأزرار */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+  background: white;
+}
+
+.btn-edit:hover {
+  background-color: #f0f9ff;
+  color: #1b396a;
+  border-color: #1b396a;
+}
+.btn-delete:hover {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}

@@ -1,0 +1,64 @@
+.promotion-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+.page-title {
+  color: #1b396a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.table-wrapper {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+.custom-table th,
+.custom-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+.custom-table th {
+  background-color: #f9f9f9;
+  font-weight: 700;
+  color: #222;
+}
+.badge {
+  padding: 5px 12px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+.badge-author {
+  background-color: #6c757d;
+}
+.badge-reviewer {
+  background-color: #28a745;
+}
+.btn-promote {
+  background-color: #1b396a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-promote:hover {
+  background-color: #152c52;
+}

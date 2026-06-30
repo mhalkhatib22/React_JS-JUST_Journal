@@ -1,0 +1,66 @@
+/* ================== GENERAL ================== */
+.about {
+  color: #1f1f1f;
+  padding-bottom: 80px;
+  line-height: 1.8;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================== HEADER ================== */
+.about-header {
+  text-align: center;
+  padding: 40px 20px; /* زودت شوي البادينغ عشان يطلع أحلى */
+  background: linear-gradient(to right, #eef3fc, #ffffff);
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  color: #1b396a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.about-header p {
+  font-size: 18px;
+  /* color: #555; */
+}
+
+/* ================== CONTENT ================== */
+.about-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content-block {
+  margin-bottom: 30px;
+}
+
+.content-block h2 {
+  font-size: 26px;
+  color:white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.content-block p {
+  font-size: 17px;
+  color: white;
+  text-align: justify;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 32px;
+  }
+
+  .content-block h2 {
+    font-size: 22px;
+  }
+
+  .content-block p {
+    font-size: 16px;
+  }
+}

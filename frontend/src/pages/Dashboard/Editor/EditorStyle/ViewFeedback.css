@@ -1,0 +1,81 @@
+.feedback-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  padding: 20px;
+}
+.page-header {
+  margin-bottom: 25px;
+}
+.page-title {
+  color: #1b396a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.page-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.table-wrapper {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  overflow-x: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+.custom-table th,
+.custom-table td {
+  border-bottom: 1px solid #eee;
+  padding: 14px 15px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.custom-table th {
+  background-color: #f8f9fa;
+  font-weight: 700;
+  color: #1b396a;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+.message-cell {
+  max-width: 400px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.btn-reply {
+  background-color: transparent;
+  border: 1px solid #1b396a;
+  color: #1b396a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.btn-reply:hover {
+  background-color: #1b396a;
+  color: white;
+}
+
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-size: 1.1rem;
+}
