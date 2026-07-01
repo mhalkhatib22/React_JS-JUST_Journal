@@ -17,10 +17,7 @@ import About from "./pages/About";
 import UserProfile from "./pages/UserProfile";
 
 // --- Lazy Loading Components ---
-// Author[cite: 6]
-// const AuthorDashboard = lazy(
-//   () => import("./pages/Dashboard/Author/AuthorDashboard"),
-// );
+// Author
 const Dashboard = lazy(
   () => import("./components/Dashboard"),
 );
@@ -36,10 +33,7 @@ const Notifications = lazy(
   () => import("./pages/Dashboard/Author/Notifications"),
 );
 
-// Editor[cite: 6]
-// const EditorDashboard = lazy(
-//   () => import("./pages/Dashboard/Editor/EditorDashboard"),
-// );
+// Editor
 const EditorHome = lazy(() => import("./pages/Dashboard/Editor/EditorHome"));
 const AllResearch = lazy(() => import("./pages/Dashboard/Editor/AllResearch"));
 const SendForReview = lazy(
@@ -58,10 +52,7 @@ const ViewFeedback = lazy(
   () => import("./pages/Dashboard/Editor/ViewFeedback"),
 );
 
-// Reviewer[cite: 6]
-// const ReviewerDashboard = lazy(
-//   () => import("./pages/Dashboard/Reviewer/ReviewerDashboard"),
-// );
+// Reviewer
 const ReviewerHome = lazy(
   () => import("./pages/Dashboard/Reviewer/ReviewerHome"),
 );
@@ -74,7 +65,7 @@ const ReviewerFeeedback = lazy(
 
 // --- Route Guards (Equivalent to router.beforeEach) ---
 
-// 1. Protected Route: Ensures the user is logged in and has the correct role[cite: 6].
+// 1. Protected Route: Ensures the user is logged in and has the correct role.
 const ProtectedRoute = ({ allowedRole }) => {
   const token = localStorage.getItem("token");
   const userRole = localStorage.getItem("userRole");
@@ -94,7 +85,7 @@ const ProtectedRoute = ({ allowedRole }) => {
   return <Outlet />;
 };
 
-// 2. Public Auth Route: Prevents logged-in users from accessing the login/signup pages[cite: 6].
+// 2. Public Auth Route: Prevents logged-in users from accessing the login/signup pages.
 const PublicAuthRoute = ({ children }) => {
   const token = localStorage.getItem("token");
   const userRole = localStorage.getItem("userRole");
@@ -117,13 +108,9 @@ const AppRouter = () => {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
-          [cite: 6]
           <Route path="/policies" element={<Policies />} />
-          [cite: 6]
           <Route path="/about" element={<About />} />
-          [cite: 6]
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          [cite: 6]
           {/* Auth Routes (Protected from logged-in users) */}
           <Route
             path="/login"
@@ -133,7 +120,6 @@ const AppRouter = () => {
               </PublicAuthRoute>
             }
           />
-          [cite: 6]
           <Route
             path="/signup"
             element={
@@ -142,59 +128,37 @@ const AppRouter = () => {
               </PublicAuthRoute>
             }
           />
-          [cite: 6]
           {/* --- Author Routes --- */}
           <Route element={<ProtectedRoute allowedRole="author" />}>
-            [cite: 6]
             <Route path="/author" element={<Dashboard />}>
               <Route index element={<AuthorHome />} />
-              [cite: 6]
               <Route path="create" element={<CreateResearch />} />
-              [cite: 6]
               <Route path="my-research" element={<MyResearch />} />
-              [cite: 6]
               <Route path="feedback" element={<CreateFeedback />} />
-              [cite: 6]
-              {/* <Route path="notifications" element={<Notifications />} /> */}
-              [cite: 6]
+              <Route path="notifications" element={<Notifications />} />
               <Route path="profile" element={<UserProfile />} />
-              [cite: 6]
             </Route>
           </Route>
           {/* --- Editor Routes --- */}
           <Route element={<ProtectedRoute allowedRole="editor" />}>
-            [cite: 6]
             <Route path="/editor" element={<Dashboard />}>
               <Route index element={<EditorHome />} />
-              [cite: 6]
               <Route path="all-research" element={<AllResearch />} />
-              [cite: 6]
               <Route path="send-for-review" element={<SendForReview />} />
-              [cite: 6]
               <Route path="final-decision" element={<FinalDecision />} />
-              [cite: 6]
               <Route path="promotion" element={<ResearcherPromotion />} />
-              [cite: 6]
               <Route path="visitor-reviews" element={<VisitorReviews />} />
-              [cite: 6]
               <Route path="view-feedback" element={<ViewFeedback />} />
-              [cite: 6]
               <Route path="profile" element={<UserProfile />} />
-              [cite: 6]
             </Route>
           </Route>
           {/* --- Reviewer Routes --- */}
           <Route element={<ProtectedRoute allowedRole="reviewer" />}>
-            [cite: 6]
             <Route path="/reviewer" element={<Dashboard />}>
               <Route index element={<ReviewerHome />} />
-              [cite: 6]
               <Route path="review-papers" element={<ReviewPapers />} />
-              [cite: 6]
               <Route path="profile" element={<UserProfile />} />
-              [cite: 6]
               <Route path="feedback" element={<ReviewerFeeedback />} />
-              [cite: 6]
             </Route>
           </Route>
         </Routes>
